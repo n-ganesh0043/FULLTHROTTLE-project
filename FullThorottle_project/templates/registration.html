@@ -1,0 +1,43 @@
+{% extends 'index.html' %}
+
+{% load static %}
+{% block mainpage %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+<h3 style="text-align: center;font-family: Algerian;color: red;font-size: 50px">REGISTRATION</h3>
+<form method="post">
+{% csrf_token %}
+    <table align="center" class="tableform">
+    <tr>
+        <th style="font-size: 30px;color: orange">USERNAME:</th>
+        <th><input type="text" required placeholder="Enter u r username....." name="un"></th>
+    </tr>
+         <tr>
+        <th style="font-size: 30px;color: orange">ADDRESS:</th>
+        <th><textarea name="adrs" required></textarea></th>
+    </tr>
+         <tr>
+        <th style="font-size: 30px;color: orange">EMAIL:</th>
+        <th><input type="email" required placeholder="@gmail.com" name="email"></th>
+    </tr>
+         <tr>
+        <th style="font-size: 30px;color: orange">CONTACT-NO:</th>
+        <th><input type="tel" required placeholder="+(91)......." name="contactno"></th>
+    </tr>
+     <tr>
+        <th style="font-size: 30px;color: orange">PASSWORD:</th>
+        <th><input type="password" required placeholder="***********" name="psd"></th>
+    </tr>
+    <tr>
+        <th colspan="2" style="text-align: center"><button type="submit" class="btn btn-success">LOGIN</button></th>
+    </tr>
+    {% if message %}
+        <tr>
+        <th colspan="2">
+        <h3 style="text-align: center;color: red;font-family: Algerian">{{ message }}</h3>
+    </th>
+        </tr>
+    {% endif %}
+    </table>
+</form>
+{% endblock %}

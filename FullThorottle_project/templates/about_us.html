@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block mainpage %}
+<link rel="stylesheet" href="{% static 'css/about_us.css' %}">
+<br><br><br>
+    <h2 style="color: red;font-family: 'Arial Black';text-align: center">ABOUT US</h2>
+    <br>
+    <table align="right" border="0">
+    <tr>
+        <th rowspan="2">
+            <img src="{% static 'images/about.jpg' %}" width="400px" height="500px">
+        </th>
+    </tr>
+    <tr>
+        <th></th>
+        <th style="font-family: Algerian;font-size: 25px;color: blue">We are data scientists and software craftsmen solving important business problems using a unique blend of business acumen, tech expertise and machine learning. We offer technology consulting, software development and ML expertise to YCombinator startups.
+
+Parallel-y, we are also currently working on multiple inhouse products, many of which employ Machine Learning (a cutting edge Slack Standup bot, an applicant tracking and filtering tool, a geolocation chatting app and a Marketing Automation bot that aims to address marketing woes for startups).
+        </th>
+    </tr>
+    </table>
+{% endblock %}

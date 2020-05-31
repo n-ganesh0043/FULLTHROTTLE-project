@@ -1,0 +1,31 @@
+{% extends 'home.html' %}
+{% load static %}
+
+{% block homepage %}
+    {% if name %}
+            <h1 style="text-align: center"> <font style="color: orange;font-weight: bolder;font-family: Algerian"> {{ name }}</font> <span style="color: white"> your RESTAURANT Details...</span></h1>
+            {% endif %}
+    {% for x in dat %}
+<table align="center" border="2">
+<tr>
+    <th style="font-family: Algerian;font-size: 30px;color: greenyellow;text-align: center">ID</th>
+    <th style="color: white;text-align: center">
+        {{ x.rid }}
+    </th>
+</tr>
+<tr>
+    <th style="font-family: Algerian;font-size: 30px;color: greenyellow;text-align: center">USERNAME</th>
+    <th style="color: white;text-align: center">{{ x.username }}</th>
+</tr>
+<tr>
+    <th style="font-family: Algerian;font-size: 30px;color: greenyellow;text-align: center">ADDRESS</th>
+    <th style="color: white;text-align: center">{{ x.address }}</th>
+</tr>
+<tr>
+    <th style="font-family: Algerian;font-size: 30px;color: greenyellow;text-align: center">EMAIL</th>
+    <th style="color: white;text-align: center">{{ x.email }}</th>
+</tr>
+
+</table>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block mainpage %}
+<link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+<div class="container" style="margin-top: 50px">
+<h2 class="text-center" style="font-family: Algerian;color: orange">CONTACT US</h2>
+    <br>
+    <div class="row mt-5 text-center">
+    <div class="col-lg-3 col-sm-6 mydivstyle">
+       <h4><i class="fas fa-phone-square"></i> CONTACT</h4>
+        <p class="mt-3 font-weight-bold"><a class="text-danger" href="tel:+91 80470 91822"> +91 80470 91822</a></p>
+    </div>
+         <div class="col-lg-3 col-sm-6 mydivstyle">
+       <h4><i class="fas fa-envelope"></i> send Email</h4>
+        <p class="mt-3 font-weight-bold"><a class="text-danger" href="mailto:suchal@fullthrottlelabs.com"> suchal@fullthrottlelabs.com</a></p>
+    </div>
+         <div class="col-lg-3 col-sm-6 mydivstyle">
+       <h4><i class="fas fa-address-card"></i> Address</h4>
+        <p class="mt-3 font-weight-bold"><a class="text-danger" href="http://maps.google.com/maps?q=3rd floor, 91Springboard, 8th Block Koramangala
+Bangalore, India">3rd floor, 91Springboard, 8th Block Koramangala
+Bangalore, India</a></p>
+    </div>
+         <div class="col-lg-3 col-sm-3 mydivstyle">
+       <h4><i class="fas fa-address-card"></i> TIMINGS</h4>
+        <p class="mt-3 font-weight-bold"><a class="text-danger"> 10:00AM - 08:00PM</a></p>
+    </div>
+    </div>
+</div>
+{% endblock %}

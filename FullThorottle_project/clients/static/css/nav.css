@@ -1,0 +1,15 @@
+.nav-link{
+    color: orange!important;
+}
+
+.nav-link:hover {
+    color: yellow;
+    background-color: lightgrey;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#showcase{
+    min-height: 500px;
+    background: url("../images/bodyimage.jpg") no-repeat 0 -400px;
+}
